@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="font-family: Georgia; font-weight: bolder;">
+      Message
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card-content>
+    
+  <div class="contactlist">
+    <ion-searchbar data-validate="name" placeholder="Search Contact"></ion-searchbar>
+    </div>
+
+          <br>
+        <ion-item>
+          <div class="message" data-validate="Please enter your message">
+            <textarea class="msg" name="message" placeholder="Your Message" style="font-family: Slab serif; font-weight: bolder; color: rgb(20, 19, 20);" ></textarea>
+            <span class="msg"></span>
+          </div>
+        
+      <ion-textarea [(ngModel)]="contMessage"></ion-textarea>
+      </ion-item>
+      
+    <ion-button expand="shape" fill="solid" color="success" shape="round" style="font-family: Slab serif; font-weight: bolder; color: rgb(20, 19, 20); margin-top:10px ;
+    margin-left:620px;"><a href="message/message.page.html">Send</a></ion-button>
+    
+      
+</ion-card-content>
+</ion-content>
